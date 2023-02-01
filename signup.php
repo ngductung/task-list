@@ -24,10 +24,10 @@
                 <span class="icon">
                     <i class="fa fa-lock" aria-hidden="true"></i>
                 </span>
-                <input type="password" placeholder="Password" name="password" class="input_field">
+                <input type="password" placeholder="Password" name="password" class="input_field" id="input_password">
                 <span class="icon show">
-                    <i class="fa fa-eye" aria-hidden="true" style="display: block;"></i>
-                    <i class="fa fa-eye-slash" aria-hidden="true" style="display: none;"></i>
+                    <i class="fa fa-eye" id="see" aria-hidden="true" style="display: block;"></i>
+                    <i class="fa fa-eye-slash" id="hide" aria-hidden="true" style="display: none;"></i>
                 </span>
             </div>
             <div class="btn_submit">
@@ -42,6 +42,28 @@
 </body>
 
 </html>
+
+<script>
+    var input_password = document.getElementById('input_password');
+    var icon = document.querySelector('.show');
+    var icon_see = document.getElementById('see');
+    var icon_hide = document.getElementById('hide');
+    // input_password.addEventListener("click", function() {
+    //     if (input_password.getAttribute)
+    // })
+    icon.addEventListener("click", function() {
+        var status = input_password.getAttribute('type');
+        if (status == 'password') {
+            input_password.setAttribute('type', 'text');
+            icon_see.setAttribute('style', 'display: none;');
+            icon_hide.setAttribute('style', 'display: block;');
+        } else {
+            input_password.setAttribute('type', 'password');
+            icon_see.setAttribute('style', 'display: block;');
+            icon_hide.setAttribute('style', 'display: none;');
+        }
+    })
+</script>
 
 <?php
 if (isset($_POST['submit-btn'])) {
