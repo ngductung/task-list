@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+.login {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    display: block;
+}
+
+h1 {
+    font-size: 50px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+/* input {
+    border: 2px solid #eee;
+    padding: 5px 10px 5px 50px;
+    font-size: 18px;
+    line-height: 30px;
+    outline: 0;
+    display: block;
+    width: 100%;
+} */
+
+.input {
+    padding: 8px 0;
+    position: relative;
+}
+
+.input_field {
+    border-radius: 8px;
+    border: 2px solid #eee;
+    padding: 5px 45px 5px 50px;
+    font-size: 18px;
+    line-height: 30px;
+    /* outline: 0; */
+    /* display: block; */
+    /* width: 100%; */
+}
+
+.btn_submit {
+    text-align: center;
+}
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn {
+    margin-top: 10px;
+    padding: 4px 10px;
+}
+
+.icon {
+    position: absolute;
+    top: 0;
+    font-size: 25px;
+    margin-left: 8px;
+    /* color: #4b00ff; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+i {
+    z-index: 100;
+}
+
+.show {
+    right: 0;   
+    margin-right: 8px;
+}
+
+.fa-eye:hover, .fa-eye-slash:hover{
+    cursor: pointer;
+}
+
+
+.footer {
+    margin-top: 10px;
+    text-align: center;
+}
+
+h5 {
+    display: inline-block;
+}
+
+a {
+    display: inline-block;
+    margin-left: 10px;
+    text-decoration: none;
+}

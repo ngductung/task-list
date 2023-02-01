@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+.container {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    display: block;
+    width: 800px;
+}
+
+.header {
+    height: 100px;
+    width: 100%;
+    background-color: rgb(106, 122, 228);
+    display: flex;
+    align-items: center;
+    text-align: center; 
+    justify-content: center;
+}
+
+
+
+table {
+    width: 90%;
+    /* margin: 30px auto; */
+    /* border: 1px solid; */
+    /* border-radius: 50px; */
+    position: absolute;
+    right: 0;
+
+}
+
+p {
+    margin: 20px 0px 25px 20px;
+    font-weight: bolder;
+}
+
+.input-task {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.input-text {
+    width: 90%;
+    line-height: 40px;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.btn-add {
+    border: none;
+    position: absolute;
+    right: 0;
+    
+}
+
+button i {
+    font-size: 40px;
+}
+
+th {
+    font-size: 20px;
+}
+
+th, td {
+    /* border: none; */
+    height: 30px;
+    /* padding: 2px; */
+    text-align: center;
+    word-wrap: break-word;
+    /* background-color: rgb(211, 207, 207, 0.5); */
+}
+
+tr:hover{
+    background-color: rgb(196, 193, 193);
+}
+
+.delete-task{
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    color: rgb(230, 39, 39);
+}
+
+.btn-logout {
+    top: 4%;
+    right: 20%;
+    position: fixed;
+    padding: 2px 4px;
+}
+
+.btn-logout:hover {
+    cursor: pointer;
+}
