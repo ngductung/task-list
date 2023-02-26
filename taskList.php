@@ -37,7 +37,7 @@ if (isset($_POST['submit'])) {
         } else {
             $query = 'insert into task (id, task) values (?, ?);';
             $prepare = $conn->prepare($query);
-            $prepare->bind_param('is', $id, $task);
+            $prepare->bind_param('is', $id, htmlspecialchars($task));
             $prepare->execute();
             header("location: index.php");
         }
@@ -110,7 +110,7 @@ $result = $prepare->get_result();
             <tbody>
                 <?php while ($row = $result->fetch_assoc()) { ?>
                     <tr>
-                        <td> <?php echo htmlspecialchars($row['task']); ?></td>
+                        <td> <?php echo $row['task']; ?></td>
                         <td style="width: 60px;">
                             <a href="./taskList.php?del_task=<?php echo $row['task'] ?>">
                                 <!-- <i class="fa fa-plus " aria-hidden="true"></i> -->
